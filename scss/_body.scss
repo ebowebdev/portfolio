@@ -1,0 +1,109 @@
+.content {
+    @extend %flexcenter;
+    .home {
+        width: 90%;
+        height: 90%;
+        font-size: 4rem;
+        @extend %flexcenter;
+        span {
+            color: $activeNav;
+            font-style: italic;
+        }
+        .intro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .intro-title {
+                font-size: 2.5rem
+            }
+        }
+    }
+    .skillsbox{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .para {
+            font-size: 1.5rem;
+            padding-top: 1rem; 
+            @include responsive(tablet){
+                font-size: 1.3rem;
+            }
+            span {
+                color: $activeNav;
+                font-style: oblique;
+            }
+        }
+        .myskills{
+            display: flex;
+            flex-direction: column;
+            h1 {
+                text-align: center;
+                padding-bottom: 1rem; 
+                padding-top: 1rem; 
+            }
+            .skills {
+                display: flex;
+                justify-content: space-between;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    i {
+                        font-size: 3rem;
+                    }
+                    span {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: $activeNav
+                    }
+                }
+            }
+        }
+        .more {
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+    .about {
+        width: 60%;
+        @extend %flexcenter;
+        .para {
+            font-size: 2rem;
+            padding-bottom: 1rem; 
+            span {
+                color: $activeNav;
+                font-style: oblique;
+            }
+        }
+    }
+    .contact {
+        width: 70%;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            span {
+                color: $activeNav;
+                font-style: oblique;
+            }
+    }
+    .about {
+        @extend %flexcenter;
+    }
+    .compo-enter {
+        opacity: 0;
+    }
+    .compo-enter-active ,.compo-leave-active {
+        transition: opacity .5s ease-in;
+    }
+    .compo-leave-to {
+        opacity: 0;
+    }
+}
+
+
+

@@ -1,0 +1,65 @@
+$mainColor: #2D3E4D;
+$secondColor: #19222B;
+$activeNav: #FFE601;
+$color: rgba(255,255,255,.9);
+$black20: rgba(0,0,0,.2);
+$black30: rgba(0,0,0,.3);
+
+@import 'mediaQuery';
+@import 'nav';
+@import 'navelist';
+@import 'body';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+html {
+    @include responsive(laptop-L){
+        font-size: 100%//16px = 1rem
+    }
+    @include responsive(laptop){
+        font-size: 87% //14px = 1rem
+    }
+    @include responsive(tablet){
+        font-size: 75%//12px = 1rem
+    }
+    @include responsive(mobile-L){
+        font-size: 62%//10px = 1rem
+    }
+    @include responsive(mobile-M){
+        font-size: 62%//10px = 1rem
+    }
+    @include responsive(mobile-S){
+        font-size: 50%//8px = 1rem
+    }
+    @include responsive(big-screen){
+        font-size: 100%//16px = 1rem
+    }
+}
+%flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flexspace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.all {
+    width: 100vw;
+    height: 100vh;
+    color: $color;
+    background: url(../img/lombre.png) no-repeat center;
+    background-size: cover;
+    background-color: $mainColor;
+    @extend %flexcenter;
+    .container {
+        width: 90%;
+        height: 90%;
+        box-shadow: 0px 0px 20px 0px rgba(255,255,255,.5);
+        padding: .5rem;
+    }
+}

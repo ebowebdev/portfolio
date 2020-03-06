@@ -1,0 +1,72 @@
+section {
+    width: 100%;
+    height: 90%;
+    @extend %flexcenter;
+    @include responsive(tablet){
+        flex-direction: column;
+    }
+    .navelist {
+        @extend %flexcenter;
+        width: 15%;
+        height: 100%;
+        @include responsive(tablet){
+            width: 100%;
+            height: 10%;
+            padding-top: .2rem;
+        }
+        ul {
+            width: 100%;
+            list-style: none;
+            @include responsive(tablet){
+                display: flex;
+                justify-content: space-evenly;
+            }
+            li {
+                background-color: $secondColor;
+                margin-bottom: .2rem;
+                font-size: 1.5rem;
+                text-align: center;
+                padding: .2rem;
+                border-radius: 0 8px 8px 0;
+                cursor: pointer;
+                @include responsive(tablet){
+                    font-size: 2rem;
+                    margin-bottom: 0rem; 
+                }
+                @include responsive(mobile-M){
+                    font-size: 2rem;
+                    margin-bottom: 0rem; 
+                }
+                @include responsive(mobile-L){
+                    font-size: 2rem;
+                    margin-bottom: 0rem; 
+                }
+            }
+            li:nth-child(1) {
+                transform: matrix(0.99, -0.14, 0.11, 0.99, 0, 0);
+            }
+            li:nth-child(2) {
+                transform: matrix(0.99, 0.14, -0.11, 0.99, 0, 0);
+            }
+            li:nth-child(3) {
+                transform: matrix(0.99, -0.14, 0.11, 0.99, 0, 0);
+            }
+            li:nth-child(4) {
+                transform: matrix(0.99, 0.14, -0.11, 0.99, 0, 0);
+            }
+        }
+        .active {
+            background-color: $activeNav;
+            color: $secondColor;
+            font-weight: bold;
+        }
+    }
+    .content {
+        width: 85%;
+        height: 100%;
+        @include responsive(tablet){
+            width: 100%;
+            height: 80%;
+        }
+    }
+}

@@ -1,0 +1,415 @@
+header {
+  width: 100%;
+  height: 10%;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+header .contact div {
+  width: 100%;
+}
+
+header .contact div i {
+  padding-right: .3rem;
+  width: 30px;
+}
+
+header .contact div .fa-phone-square {
+  font-size: 1.7rem;
+}
+
+header .social {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+}
+
+header .social li {
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+header .social li i {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+section {
+  width: 100%;
+  height: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+section .navelist {
+  width: 15%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  section .navelist {
+    width: 100%;
+    height: 10%;
+    padding-top: .2rem;
+  }
+}
+
+section .navelist ul {
+  width: 100%;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  section .navelist ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+section .navelist ul li {
+  background-color: #19222B;
+  margin-bottom: .2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: .2rem;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  section .navelist ul li {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section .navelist ul li {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  section .navelist ul li {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+  }
+}
+
+section .navelist ul li:nth-child(1) {
+  -webkit-transform: matrix(0.99, -0.14, 0.11, 0.99, 0, 0);
+          transform: matrix(0.99, -0.14, 0.11, 0.99, 0, 0);
+}
+
+section .navelist ul li:nth-child(2) {
+  -webkit-transform: matrix(0.99, 0.14, -0.11, 0.99, 0, 0);
+          transform: matrix(0.99, 0.14, -0.11, 0.99, 0, 0);
+}
+
+section .navelist ul li:nth-child(3) {
+  -webkit-transform: matrix(0.99, -0.14, 0.11, 0.99, 0, 0);
+          transform: matrix(0.99, -0.14, 0.11, 0.99, 0, 0);
+}
+
+section .navelist ul li:nth-child(4) {
+  -webkit-transform: matrix(0.99, 0.14, -0.11, 0.99, 0, 0);
+          transform: matrix(0.99, 0.14, -0.11, 0.99, 0, 0);
+}
+
+section .navelist .active {
+  background-color: #FFE601;
+  color: #19222B;
+  font-weight: bold;
+}
+
+section .content {
+  width: 85%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  section .content {
+    width: 100%;
+    height: 80%;
+  }
+}
+
+.content .home {
+  width: 90%;
+  height: 90%;
+  font-size: 4rem;
+}
+
+.content .home span {
+  color: #FFE601;
+  font-style: italic;
+}
+
+.content .home .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .home .intro .intro-title {
+  font-size: 2.5rem;
+}
+
+.content .skillsbox {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .skillsbox .para {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content .skillsbox .para {
+    font-size: 1.3rem;
+  }
+}
+
+.content .skillsbox .para span {
+  color: #FFE601;
+  font-style: oblique;
+}
+
+.content .skillsbox .myskills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .skillsbox .myskills h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.content .skillsbox .myskills .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .skillsbox .myskills .skills div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .skillsbox .myskills .skills div i {
+  font-size: 3rem;
+}
+
+.content .skillsbox .myskills .skills div span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FFE601;
+}
+
+.content .skillsbox .more {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.content .about {
+  width: 60%;
+}
+
+.content .about .para {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.content .about .para span {
+  color: #FFE601;
+  font-style: oblique;
+}
+
+.content .contact {
+  width: 70%;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .contact span {
+  color: #FFE601;
+  font-style: oblique;
+}
+
+.content .compo-enter {
+  opacity: 0;
+}
+
+.content .compo-enter-active, .content .compo-leave-active {
+  -webkit-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+}
+
+.content .compo-leave-to {
+  opacity: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 87%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 62%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 62%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+section, section .navelist, .content, .content .home, .content .about, .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all {
+  width: 100vw;
+  height: 100vh;
+  color: rgba(255, 255, 255, 0.9);
+  background: url(../img/lombre.png) no-repeat center;
+  background-size: cover;
+  background-color: #2D3E4D;
+}
+
+.all .container {
+  width: 90%;
+  height: 90%;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+  padding: .5rem;
+}
+/*# sourceMappingURL=style.css.map */
